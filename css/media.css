@@ -1,0 +1,45 @@
+body{
+    border: solid 10px red;
+}
+
+
+/*@media screen and (max-width: 1024px) {
+    /*body{
+        border: 10px solid red;
+    }*/
+    /*.header{
+        border: solid red 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /*.header{
+        display: block;
+    }*/
+    /*.header{
+        border: solid blue 10px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    /*body{
+        border: 10px solid yellow;
+    }*/
+    /*.header{
+        border: solid yellow 10px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    /*body{
+        border: 10px solid blue;
+    }*/
+    /*.header{
+        border: solid green 10px;
+    }
+    
+}
+
+

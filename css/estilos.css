@@ -1,0 +1,423 @@
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #f6f6f6;
+    margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Ramabhadra', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+h1{
+    font-size: 30px;
+    line-height: 1.5em;
+    letter-spacing: -.2px;
+    margin: 0px;
+}
+
+h1 strong{
+    color:#95ca3e; 
+}
+
+h2{
+    color: #026fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+figure{
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+    }
+
+.header{
+    /*background-color: #0791e6;*/
+    background-color: #056099;
+    color: cornsilk;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header ol li{
+    height: inherit;
+}
+
+.hero {
+    height: 375px;
+    /*background-image: url('../img/yo.jpg');*/
+    background-color:white;
+   /* background-repeat: no-repeat;
+    background-position-x: right;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.image_hero{
+    object-fit: cover;
+
+}
+
+.footer{
+    background-color: #1b2127;
+    color: lavender;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer img{
+    vertical-align: middle;
+}
+
+.menu{
+    height: inherit;
+}
+
+.portfolio{
+    background-color: #FAFAFA;
+    padding: 20px;
+}
+
+.project{
+    /*border-top: 10px solid red;
+    border-right: 10px solid green;
+    border-bottom: 10px solid yellow;
+    border-left: 10px solid blue;*/
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project_activity{
+    margin: 10px 0;
+}
+
+.project_date{
+    margin: 10px 0;
+}
+
+.project_details{
+    width: 50%;
+}
+
+.project_description{
+    font-size: 15px;
+}
+
+.project_url{
+    margin: 10px 0;
+}
+
+.project_imageContainer{
+    width: 50%;
+}
+
+.project_title{
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+}
+
+.project strong{
+    font-family: 'Ramabhadra', sans-serif;
+}
+
+.event {
+    margin: 1%;
+    width: 48%;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4fbff;
+}
+
+.event_list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.event img {
+    width: 480px;
+    height: 320px;
+    object-fit: cover;
+}
+
+.event_detail{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event_description {
+    text-align: left;
+}
+
+.event_url{
+    border: 1px solid #056fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #056fff;
+    border-radius: 5px;
+}
+
+.event_list_title {
+    margin-left: 10px;
+
+}
+
+.contact{
+    background-color: #056fff;
+    color: #f4fbff;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.social_link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
+    border: 1px solid white;
+    margin: 0 10px;
+}
+
+.social_link.twitter {
+    background-image: url('../img/twitter.svg');
+  }
+  .social_link.facebook {
+    background-image: url('../img/facebook.svg');
+  }
+  .social_link.github {
+    background-image: url('../img/github.svg');
+  }
+  .social_link.instagram {
+    background-image: url('../img/instagram.svg');
+  }
+
+.form_email input{
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../img/');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form_email button{
+    display: block;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+    margin: 10px auto;
+}
+
+.form_email h3{
+    font-family: 'Ramabhadra', sans-serif;
+}
+
+.container {
+    /*border: solid 1px red;*/
+    max-width: 1000px;
+    /*width: 100%;*/
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .container{
+        padding: 0 1em;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .header {
+        display: block;
+        height: auto;
+    }
+
+    .header ol {
+        display: block;
+    }
+
+    .header ol li {
+        height: 50px;
+    }
+
+    .header a {
+        justify-content: center;
+    }
+
+    .header .logo{
+        text-align: center;
+    }
+
+    .project {
+        display: block;
+    }
+
+    .project_imageContainer {
+        width: auto;
+        text-align: center;
+    }
+
+    .project_imageContainer img {
+        max-width: 100%;
+    }
+
+    .project_details {
+        width: auto;
+        font-size: 16px;
+    }
+
+    .project_title {
+        font-size: 1.2em;
+        margin-bottom: 0.3em;
+
+    }
+
+    .project_url {
+        font-size: 0.9em;
+    }
+
+    .project_activity {
+        font-size: 0.8em;
+        margin: 0.2em 0;
+    }
+
+    .project_description {
+        font-size: 0.8em;
+    }
+
+    .event {
+        width: auto;
+        flex-shrink: initial;
+    }
+
+    .event img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project {
+        display: block;
+    }
+
+    .project_imageContainer {
+        width: auto;
+        text-align: center;
+    }
+
+    .project_details {
+        font-size: 13px;
+    }
+
+    .event_detail {
+        margin: -2em 0.5em 0.5em;
+        padding: 1em;
+    }
+
+    .contact{
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+
+    .form_email button {
+        margin: 1em auto;
+    }
+
+    .form_email h3{
+        margin-top: 0;
+    }
+
+    .footer {
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .project {
+        display: block;
+    }
+
+    .project_imageContainer {
+        width: auto;
+        text-align: center;
+    }
+
+    
+}
