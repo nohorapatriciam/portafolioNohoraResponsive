@@ -18,22 +18,22 @@
 
 </head>
 <body>
-    <i class="icon-menu burger-button"></i>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
     <header class="header">
         <div class="container">
             <figure class="logo">
                 <img src="img/pikachu.png" height="50"  alt="Logo de http://nohoralaprofe.com.co" />
             </figure>
-            <nav class="menu is_active"> 
+            <nav class="menu" class="is_active"> 
                 <ol>
                     <li> 
-                        <a class="link" href="#portafolio"> Portafolio</a>
+                        <a class="link" href="#portfolio"> Portafolio</a>
                     </li>
                     <li>
                         <a class="link" href="#eventos"> Experiencia</a>
                     </li>
                     <li>
-                         <a class ="link" href="https://www.lasalle.edu.co/clinica-veterinaria" target="_blank"> Clinica Veterinaria U de la Salle</a>
+                         <a class ="link" href="https://www.lasalle.edu.co/clinica-veterinaria" target="_blank"> Laboratorio Clinico</a>
                     </li>
                     <li> 
                         <a href="#contacto"> Trabajemos Juntos </a>
@@ -57,7 +57,7 @@
             </div>
         </figure>-->   
         
-    <section class="portfolio"> 
+    <section class="portfolio" id="portfolio"> 
         <div class="container">
             <h2> Portafolio (Experiencia Profesional) </h2>
             <article class="project">
@@ -100,6 +100,7 @@
                 <div class="project_details">
                     <h3 class="project_title"> Politecnico Los Alpes </h3>
                     <h6 class="project_activity">Docente PreU y Pre Icfes. área: Biología y tutorias de medicina</h6>
+                    <p> <small> <strong> Puedes verlo en </strong> <a class="project_url" href="https://politecnicolosalpes.com/" target="_blank"> Politecnico los Alpes</a>    </small></p>
                     <p class="project_description"> Docente de chicos bachilleres y adultos que quieren ingresar a la Universidad, con enfoque especial en la Universidad Nacional, en área de Biología y tutorias relacionadas a biología y temas relacionados a la medicina (humana y veterinaria) </p>
                 </div>
                 <figure class="project_imageContainer">
@@ -259,6 +260,40 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        //console.log('Hola mundo, es mi primera linea en JS');
+        const ipad = window.matchMedia('screen and (max-width: 767px)')
+
+
+        const menu = document.querySelector('.menu');
+        //console.log(menu);
+        const burgerButton = document.querySelector('#burger-menu');
+        //console.log(burgerButton);
+  
+       
+
+        ipad.addListener(validation)
+
+        function validation(event) {
+            if (event.matches) {
+                burgerButton.addEventListener('click', hideShow)
+            } else {
+                burgerButton.removeEventListener('click', hideShow)
+            }
+        }
+
+        validation(ipad);
+
+        function hideShow() {
+            if (menu.classList.contains('is_active')) {
+                menu.classList.remove('is_active');
+            } else {
+                menu.classList.add('is_active');
+            }
+           
+        }
+    </script>
 </body>
 </html> 
 
